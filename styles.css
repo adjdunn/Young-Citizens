@@ -106,8 +106,9 @@
   .hero {
     padding: 120px 0 60px;
     background: linear-gradient(
-        135deg,
+        180deg,
         var(--primary-color) 0%,
+        color-mix(in srgb, var(--primary-color) 50%, var(--secondary-color)) 50%,
         var(--secondary-color) 100%
     );
     position: relative;
@@ -355,27 +356,47 @@
     }
   
     .hero {
-        background-attachment: scroll;
-        background-size: 80% auto;
-        padding: 100px 0 40px;
+        background: linear-gradient(
+            180deg,
+            var(--primary-color) 0%,
+            color-mix(in srgb, var(--primary-color) 60%, var(--secondary-color)) 40%,
+            var(--secondary-color) 100%
+        );
+    }
+  
+    .hero::after {
+        width: 500px;
+        height: 500px;
+        top: 65%;
+    }
+  
+    .hero h1 {
+        font-size: clamp(2.8rem, 6vw, 3.5rem);
+        margin-bottom: 1rem;
+    }
+  
+    .hero .subtitle {
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+    }
+  
+    .hero .highlight {
+        padding: 0.6rem 1.8rem;
+    }
+  
+    .hero .container {
+        margin-top: 0;
+        padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+        min-height: 50vh;
     }
   
     .hero::after {
         width: 400px;
         height: 400px;
-    }
-  
-    .hero .container {
-        margin-top: -50px;
-        padding: 1.5rem;
-    }
-  
-    .hero h1 {
-        font-size: clamp(2rem, 4vw, 3rem);
-    }
-  
-    .hero .subtitle {
-        font-size: clamp(1rem, 2vw, 1.4rem);
     }
   }
   
