@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Citizens of the World | Jeunes Citoyens du Monde</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Young Citizens of the World logo" class="logo-img">
+            </a>
+            <div class="nav-content">
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-text active">EN</span>
+                    <span class="separator">/</span>
+                    <span class="lang-text">FR</span>
+                </button>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#" data-en="Our Mission" data-fr="Notre Mission">Our Mission</a></li>
+                    <li><a href="#" data-en="Interviews" data-fr="Entrevues">Interviews</a></li>
+                    <li><a href="#" data-en="Global Schools" data-fr="Écoles Mondiales">Global Schools</a></li>
+                    <li><a href="#" data-en="Get Involved" data-fr="Participer">Get Involved</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>
+                <span class="en">Young Citizens of the World</span>
+                <span class="fr">Jeunes Citoyens du Monde</span>
+            </h1>
+            <p class="subtitle">
+                <span class="en"><span class="highlight">Empowering young voices, shaping global futures</span></span>
+                <span class="fr"><span class="highlight">Donner du pouvoir aux jeunes voix, façonner les avenirs mondiaux</span></span>
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-interview">
+            <h2>
+                <span class="en">Featured Interview</span>
+                <span class="fr">Entrevue en Vedette</span>
+            </h2>
+            <div class="featured-content">
+                <img src="https://static.fabrik.io/13ql/a4ae8093d78928b5.jpg?lossless=1&w=480&fit=crop&ar=4:3&crop=faces%2Centropy&s=c97c1ac2efc029562fefeedc9010a04b" alt="Interview with Dominic Barton" class="featured-img">
+                <div class="featured-text">
+                    <h3>
+                        <span class="en">A Conversation with Chris Hadfield</span>
+                        <span class="fr">Une Conversation avec Chris Hadfield</span>
+                    </h3>
+                    <p>
+                        <span class="en">Join us as we dive into a fascinating conversation about diplomacy, leadership, and global business in today's ever-changing world.</span>
+                        <span class="fr">Rejoignez-nous pour une conversation fascinante sur la diplomatie, le leadership et les affaires mondiales dans le monde en constante évolution d'aujourd'hui.</span>
+                    </p>
+                    <a href="#" class="btn-primary">
+                        <span class="en">Watch Now</span>
+                        <span class="fr">Regarder Maintenant</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="interviews-grid">
+            <h2>
+                <span class="en">Recent Interviews</span>
+                <span class="fr">Entrevues Récentes</span>
+            </h2>
+            <div class="grid">
+                <!-- Interview cards will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Young Citizens of the World logo" class="logo-img">
+                </div>
+                <div class="footer-links">
+                    <h4>
+                        <span class="en">Quick Links</span>
+                        <span class="fr">Liens Rapides</span>
+                    </h4>
+                    <ul>
+                        <li><a href="#" data-en="About Us" data-fr="À Propos">About Us</a></li>
+                        <li><a href="#" data-en="Our Impact" data-fr="Notre Impact">Our Impact</a></li>
+                        <li><a href="#" data-en="Get Involved" data-fr="Participer">Get Involved</a></li>
+                        <li><a href="#" data-en="Contact" data-fr="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>
+                        <span class="en">Follow Us</span>
+                        <span class="fr">Suivez-nous</span>
+                    </h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="icon-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Young Citizens of the World | Jeunes Citoyens du Monde</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
